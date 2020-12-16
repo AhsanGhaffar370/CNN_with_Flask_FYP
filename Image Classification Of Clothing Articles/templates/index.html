@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Cloth Classifier</title>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.png" />
+    <meta name="description" content="Enjoy Fast Access To Top Family Lawyers Across The US.">
+    <link rel="icon" type="image/x-icon" href ="../static/Image/logo21.png">
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+    <!-- Font awesome -->
+    <script src="https://kit.fontawesome.com/7516c4b4cc.js" crossorigin="anonymous"></script>
+
+
+    <link href="../static/css_prac.css" type="text/css" rel="stylesheet" media="screen" />
+</head>
+
+<style>
+
+.head2{
+    padding: 100px 80px 55px 80px;
+}
+
+    .bord{
+        border: 15px solid rgba(249, 252, 248, 0.2) !important;
+        border-radius: 18px;
+    }
+
+    .footer1{
+        position: absolute;
+        margin-bottom: -150;
+    }
+</style>
+
+<body class="bg_c">
+
+    <section class="bg_bl p-0">
+
+        <!-- Navbar -->
+        <div class="nav_par p-0">
+            <!-- <img class="nav_logo trans_img2" src="../static/Image/logo21.png" alt="logo" width="100" height="50"/> -->
+            <p class="size25 b8 cl_w pl_2">CLOTH CLASSIFIER</p>
+
+            <ul class="nav p_0">
+                <li class="nav_l verCen mr-2"><a class="cl_bp" href="index.html">Home</a></li>
+                <!-- <li class="nav_l verCen mr-2"><a class="cl_bp" href="AboutProject.html">About Project</a></li>
+                <li class="nav_l verCen mr-2"><a class="cl_bp" href="AboutTeam">About Team</a></li> -->
+            </ul>
+        </div>
+    </section>
+
+
+
+
+    <section class="con85 verCen head2">
+        <div class="bg_w p-5 sh_lg centre">
+            <h1 class="size48 b8 ">Select Any Fashion Article Image</h1>
+            <h4 class="size20 b7">
+                Our CNN based Deep Learning Model Will Predict Your Image With 99% accuracy
+            </h4>
+
+            <form class="md-form mt-5 centre" method="POST" action="{{url_for('home')}}" enctype="multipart/form-data">
+                <div class="btn btn-primary btn-md  ">
+                    <input type="file" name="image">
+                    <input type="submit" value="Predict Image" class="button btn_lg size22 b8 mx-0 rad50 mt_2 mb_2 ml-3 ani_infinite animate__animated animate__pulse animate__slow"/>
+                </div>
+            </form>
+
+            <!-- <form method="POST" action="{{url_for('home')}}" enctype="multipart/form-data">
+                <input type="file" name='image' class='btn'><br><br><br>
+                <input type="submit" class='btn'>
+            </form> -->
+            
+        </div>
+    </section>
+    
+
+
+    <footer class="footer11 fixed-bottom">
+        <section class="bg_c" style="background-color: #0b1b33">
+            <div class="con con90">
+                <div class="footer2_grid pl_1 mt-0 mb-4">
+                    <div class="mt_1">
+                        <!-- <a href="AboutProject.html" class="size13 pl_0">ABOUT PROJECT</a> |
+                        <a href="AboutTeam.html" class="size13">ABOUT TEAM</a> -->
+                        <p class="size13 tl mb_0 pl_0">
+                            COPYRIGHT©2020, ALL RIGHTS RESERVED.
+                        </p>
+                    </div>
+
+                    <div class="verCen mt_2">
+                        <a href="" class="fab fa-facebook-f fa-2x pr_1"></a>
+                        <a href="" class="fab fa-twitter fa-2x pr_1"></a>
+                        <a href="" class="fab fa-instagram fa-2x pr_1"></a>
+                        <a href="" class="fab fa-youtube fa-2x pr_1"></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </footer>
+
+</body>
+
+</html>
+        
